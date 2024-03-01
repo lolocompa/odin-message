@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="message_container">
+      <div class="header">
+        <h1><%= title %></h1>
+        <div class="profile">
+          <h3>conected as <span>Annonymus</span></h3>
+          <i class="bx bxs-user"></i>
+        </div>
+      </div>
+      <% for(let i = 0; i < messages.length; i++) {%>
+      <div class="card<%= messages[i].user %>">
+        <div class="date">
+          <h2><%= messages[i].added%></h2>
+        </div>
+        <h2 class="annonymus_tag">Annonymus</h2>
+        <% if (messages[i].user === 1) { %>
+        <div class="message">
+          <div class="avatar">A</div>
+          <h1><%= messages[i].text %></h1>
+        </div>
+        <% } else if (messages[i].user === 2) { %>
+        <div class="message right">
+          <div class="text_container">
+            <h1><%= messages[i].text %></h1>
+          </div>
+          <div class="avatar">A</div>
+        </div>
+        <% } %>
+      </div>
+      <%}%>
+      <form action="/new" method="POST">
+        <input
+          type="text"
+          maxlength="40"
+          placeholder="Write your message"
+          name="text"
+        />
+        <button type="submit"><i class="bx bxs-send"></i></button>
+      </form>
+    </div>
+  </body>
+</html>

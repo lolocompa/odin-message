@@ -1,0 +1,152 @@
+body {
+  padding: 0;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.message_container {
+  margin-top: 50px;
+  border: 1px solid black;
+  width: 50vw;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.card1,
+.card2 {
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 h1,
+.card2 h1 {
+  font-size: 20px;
+}
+
+.card1 {
+  align-items: flex-start;
+}
+
+.card2 {
+  align-items: flex-end;
+}
+
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.date h2 {
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.5;
+}
+
+.header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.profile span {
+  font-weight: 700;
+}
+
+.profile i {
+  font-size: 26px;
+  margin-left: 30px;
+}
+
+.annonymus_tag {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-radius: 15px;
+  padding: 0 5px;
+  max-width: 50%;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(189, 189, 189);
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.message h1 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+form input {
+  width: 90%;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 20px;
+}
+
+form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+form input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+form button {
+  background-color: white;
+  border: none;
+}
+
+form i {
+  color: gray;
+  cursor: pointer;
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
